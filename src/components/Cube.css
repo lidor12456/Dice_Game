@@ -1,0 +1,59 @@
+.game-board {
+    color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-image: url('../images/background1.jpg');
+}
+.cubes img{
+   height: 50px;
+    width: 50px;
+}
+
+.center-content button {
+    box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	background-color:#fc8d83;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+
+}
+
+
+
+
+
+
+.player-two, .player-one {
+    text-align: center;
+}
+.player-two div, .player-one div {
+    margin: 30px;
+}
+.player-two img, .player-one img {
+    height: 100%;
+    width: 100%;  
+}
+.player-two h2, .player-one h2 {
+    font-size: 30px;
+}
+.player-two p, .player-one p {
+    font-size: 25px;
+}
+
+h3 {
+    color :rgb(253, 6, 64);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.773);
+    font-size: 30px;
+}

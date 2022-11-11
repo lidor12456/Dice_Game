@@ -1,0 +1,9 @@
+.landing-page {
+    height: 100vh;
+    background-color: red;
+}
+.hide {
+    visibility: hidden;
+    height: 0vh;
+
+}
