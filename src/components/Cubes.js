@@ -132,7 +132,7 @@ const updateScore = () => {
     if (currentTurn == 1) {
         currentScore=firstCube+secondCube
         // currentScore =  setFirstCube((prev)=>prev + firstCube) + setSecondCube((prev)=>prev + secondCube)
-        playerOneScore = playerOneScore+currentScore
+        playerOneScore =playerOneScore+ currentScore
         checkWinning();
 
            
@@ -201,7 +201,7 @@ const restartGame = () => {
         </div>
         <div className='center-content'>
 
-        <p>Current Score : {currentScore}</p>
+        <p>Current Score : </p><br></br>
 
         <div className='cubes'>
 
@@ -224,7 +224,7 @@ const restartGame = () => {
         <button onClick={restartGame}> New Game </button>
         </div>
 
-        <div>{firstCube},{secondCube}</div>
+        {/* <div>{firstCube},{secondCube}</div> */}
         </div>
 
         <div className='player-two right-side'>

@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300;700&display=swap');
+
 *{
+    font-family: 'Marhey', cursive;
     margin: 0;
     padding: 0;
 }
@@ -29,6 +32,7 @@ p {
     overflow-y: hidden;
 }
 .btn {
+    font-family: 'Marhey', cursive;
     margin-top: 30px;
     margin-left: 20%;
     box-shadow:inset 0px 1px 0px 0px #f7c5c0;
@@ -39,7 +43,6 @@ p {
 	display:inline-block;
 	cursor:pointer;
 	color:black;
-	font-family:Arial;
 	font-size:20px;
 	font-weight:bold;
 	padding:6px 24px;
