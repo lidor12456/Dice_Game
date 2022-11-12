@@ -40,7 +40,26 @@ function Cubes() {
         console.log(secondCube);
     }
 
-
+    const checkDouble = () => {
+        if(currentTurn===1) {
+            if (currentScore==12) {
+                playerOneScore=0;
+                currentTurn=2
+            }
+    
+        }
+        if(currentTurn===2) {
+            if (currentScore===12) {
+                playerTwoScore=0;
+                currentTurn=1
+            }
+    
+    
+        }
+    
+    
+    
+    }
     const rollADie = () => {
         if (hasWinner) {
             return
@@ -54,14 +73,14 @@ function Cubes() {
         
         updateScore();
         checkDouble()
-        if (firstCube==0){
+        if (firstCube===0){
             setFirstCubeImg(image0)
         }
         else {
 
             setFirstCubeImg(img_arr[firstCube])
         }
-        if (secondCube==0){
+        if (secondCube===0){
             setSecondCubeImg(image0)
         }
         else {
@@ -73,28 +92,9 @@ function Cubes() {
   
     }
 
-const checkDouble = () => {
-    if(currentTurn==1) {
-        if (currentScore==12) {
-            playerOneScore=0;
-            currentTurn=2
-        }
 
-    }
-    if(currentTurn==2) {
-        if (currentScore==12) {
-            playerTwoScore=0;
-            currentTurn=1
-        }
-
-
-    }
-
-
-
-}
 const checkWinning = () => {
-    if (playerOneScore == 100) {
+    if (playerOneScore === 100) {
         playerOneWon = "Player One Win!"
         hasWinner=true;
         playerOneWinningCounter++
@@ -108,7 +108,7 @@ const checkWinning = () => {
 
         
     }
-    if (playerTwoScore ==100) {
+    if (playerTwoScore ===100) {
         playerTwoWon = "Player Two Win!"
         hasWinner=true;
         playerTwoWinningCounter++
@@ -129,7 +129,7 @@ const checkWinning = () => {
 
 }
 const updateScore = () => {
-    if (currentTurn == 1) {
+    if (currentTurn === 1) {
         currentScore=firstCube+secondCube
         // currentScore =  setFirstCube((prev)=>prev + firstCube) + setSecondCube((prev)=>prev + secondCube)
         playerOneScore =playerOneScore+ currentScore
@@ -137,7 +137,7 @@ const updateScore = () => {
 
            
     }
-    if (currentTurn == 2){
+    if (currentTurn === 2){
         currentScore=firstCube+secondCube
         // currentScore =  setFirstCube((prev)=>prev + firstCube) + setSecondCube((prev)=>prev + secondCube)
 
@@ -151,7 +151,7 @@ const changeTurn = () => {
     // if (hasWinner) {
     //     return
     // }
-    if (currentTurn==1) {
+    if (currentTurn===1) {
         checkWinning()
         currentScore=firstCube+secondCube
         playerOneScore = playerOneScore+currentScore
@@ -187,7 +187,7 @@ const restartGame = () => {
 
 
 
-//! Todo -  dubble six logic + landing page + utils + cubes, optional : winning counter//
+//! Todo - utils 
 
   return (
     <div className='game-board'>
@@ -206,13 +206,13 @@ const restartGame = () => {
         <div className='cubes'>
 
         {/* <img src={image1} alt="image not found" /> */}
-        {secondCube==0?
+        {secondCube===0?
         <><img src={image0} alt="image not found" /></>:
         <><img src={secondCubeImg} alt="image not found" />
         </>
         }
         <br></br>
-        {firstCube==0?
+        {firstCube===0?
         <><img src={image0} alt="image not found" /></>:
         <><img src={firstCubeImg} alt="image not found" />
         </>
