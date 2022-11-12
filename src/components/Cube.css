@@ -29,9 +29,25 @@
 	text-shadow:0px 1px 0px #b23e35;
 
 }
+.center-content button:hover {
+	background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+	background-color:#e4685d;
+}
+ .center-content p {
+    font-size: 25px;
+    text-align: center;
 
-
-
+ }
+.cubes {
+    text-align: center;
+}
+.btns {
+    text-align: center;
+    margin: 100px;
+}
+.btns button {
+    margin: 15px;
+}
 
 
 
@@ -56,4 +72,12 @@ h3 {
     color :rgb(253, 6, 64);
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.773);
     font-size: 30px;
+}
+
+@media screen {
+    .btns {
+        text-align: center;
+        margin: 40px;
+    }
+    
 }

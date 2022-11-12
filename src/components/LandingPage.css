@@ -1,9 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color :#fc8d83
+}
+p {
+    font-size: 20px;
+}
 .landing-page {
+    color : whitesmoke;
     height: 100vh;
-    background-color: red;
+    background-color: rgb(8, 6, 6);
 }
 .hide {
     visibility: hidden;
     height: 0vh;
 
+}
+.instructions {
+    border: 20px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 50%;
+    /* width: 50%; */
+    padding: 10%;
+    /* text-align: center; */
+    text-align: initial;
+    overflow-y: hidden;
+}
+.btn {
+    margin-top: 30px;
+    margin-left: 20%;
+    box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	background-color:#fc8d83;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+    padding: 1% 20%;
+    
+
+}
+
+
+@media  screen and (max-width: 992px) {
+    .instructions {
+        border: none;
+        border-radius: 0%;
+        height: 100%;
+    }
+   
+
+    
 }

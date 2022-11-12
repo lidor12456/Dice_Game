@@ -9,12 +9,11 @@ function App() {
   const [isShow,setIsShow] = useState(false)
   return (
     <div>
-        <LandingPage landClass={!isShow? 'landing-page': 'hide'} click={()=> {
-            setIsShow(!isShow)
-            console.log('im in');
-        }}/>
 
-      { (isShow? <Cubes/> : !<LandingPage/>) 
+
+      { (isShow? <Cubes/> : <LandingPage landClass={!isShow? 'landing-page': 'hide'} click={()=> {
+            setIsShow(!isShow)
+        }}/>) 
    
       }
 
